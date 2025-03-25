@@ -4,3 +4,6 @@
 [submodule "external/sokol-tools-bin"]
 	path = external/sokol-tools-bin
 	url = https://github.com/floooh/sokol-tools-bin.git
+[submodule "external/sokol"]
+	path = external/sokol
+	url = https://github.com/floooh/sokol.git
