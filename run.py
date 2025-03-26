@@ -188,7 +188,7 @@ def build(release=False, clean_config=False):
 
 if __name__ == "__main__":
     # make sure the working directory is the root folder..
-    if not os.path.isdir(".venv"):
+    if not (os.path.isdir("shaders") and os.path.isdir("src")):
         # try to change dir to the root folder
         os.chdir("..")
         if not os.path.isdir(".venv"):

@@ -7,9 +7,20 @@
             ],
             "defines": [],
             "compilerPath": "/usr/bin/clang++",
-            "cStandard": "c17",
+            "cStandard": "c99",
             "cppStandard": "c++20",
             "intelliSenseMode": "clang-x64"
+        },
+        {
+            "name": "Windows",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [],
+            "compilerPath": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/Llvm/bin/clang-cl.exe",
+            "cStandard": "c99",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "windows-clang-x64"
         }
     ],
     "version": 4

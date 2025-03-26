@@ -1,13 +1,21 @@
 #include <iostream>
 #define SOKOL_IMPL
+#ifdef __ANDROID__
+#define SOKOL_GLES3
+#else
 #define SOKOL_GLCORE
+#endif
 #include "sokol_gfx.h"
 #include "sokol_app.h"
 #include "sokol_log.h"
 #include "sokol_glue.h"
 
 /// SHADER
+#ifdef __ANDROID__
+#include <triangle-sapp.glsl310es.h>
+#else
 #include <triangle-sapp.glsl430.h>
+#endif
 
 // application state
 static struct {
